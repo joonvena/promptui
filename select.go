@@ -285,7 +285,8 @@ func (s *Select) innerRun(cursorPos, scroll int, top rune) (int, string, error) 
 				s.list.CancelSearch()
 			}
 		case key == s.Keys.PageUp.Code || (key == 'h' && !searchMode):
-			s.list.PageUp()
+			//s.list.PageUp()
+			fmt.Println("Hello")
 		case key == s.Keys.PageDown.Code || (key == 'l' && !searchMode):
 			s.list.PageDown()
 		default:
